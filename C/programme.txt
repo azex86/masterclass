@@ -1,0 +1,38 @@
+
+Setup :
+            visual studio 2022 : winget install Microsoft.VisualStudio.2022.Community
+
+
+Explication de la compilation:
+        c ->i ->asm ->o -> exe
+    
+La compilation d'un code en C/C++ par le compilateur GCC (GNU Compiler Collection) ou Clang (souvent utilisé avec l'outil de compilation de Microsoft, cl) se déroule généralement en plusieurs étapes. Voici un aperçu des différentes étapes de compilation :
+
+    Prétraitement : Dans cette première étape, le préprocesseur examine le code source et effectue des opérations telles que l'inclusion de fichiers d'en-tête, le remplacement des macros et la suppression des commentaires. Le préprocesseur génère un fichier de code source modifié avec l'extension ".i" (pour GCC) ou ".cpp" (pour cl).
+
+    Compilation : À cette étape, le compilateur proprement dit entre en jeu. Il prend le fichier de code source prétraité et le traduit en code assembleur spécifique à la plate-forme cible. Le code assembleur généré est enregistré dans un fichier avec l'extension ".s" (pour GCC) ou ".asm" (pour cl).
+
+    Assemblage : Le code assembleur généré dans l'étape précédente n'est pas encore directement exécutable. L'assemblage consiste à traduire le code assembleur en code objet binaire (fichier binaire) spécifique à la plate-forme cible. Ce fichier objet a généralement l'extension ".o" (pour GCC) ou ".obj" (pour cl).
+
+    Édition des liens : Dans cette étape, tous les fichiers objets générés précédemment, ainsi que les bibliothèques externes nécessaires, sont combinés pour créer un exécutable ou une bibliothèque partagée (DLL). L'éditeur de liens résout les références de symboles entre les fichiers objets et génère le fichier exécutable final. Il peut également effectuer des optimisations supplémentaires à ce stade. Le résultat est un fichier exécutable avec une extension spécifique à la plate-forme, telle que ".exe" pour les systèmes Windows ou sans extension spécifique sur les systèmes Unix.
+
+
+
+1: Les variables
+2: Les conditions
+3: Les boucles
+4: Les Tableaux
+5: Les chaînes de caractères
+6: Les fonctions
+7: Les POINTEURS
+8: Gestion dynamique de la mémoire : Malloc et Free
+9: écrire et lire dans des fichiers
+10: Graphisme avec la SDL
+
+
+
+#################################
+        fichier
+        graphisme(SDL)
+        thread
+        socket

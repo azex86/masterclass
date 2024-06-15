@@ -1,0 +1,67 @@
+Compilation
+Principe
+
+La compilation est le processus de traduction d'un code source écrit dans un langage de programmation (comme C, C++ ou Rust) en code machine exécutable par un processeur. Ce processus est réalisé par un compilateur.
+Étapes de la Compilation
+
+    Analyse lexicale et syntaxique : Le compilateur analyse le code source pour s'assurer qu'il est syntaxiquement correct.
+    Analyse sémantique : Vérification des types, des variables, des fonctions, etc., pour s'assurer qu'ils sont utilisés correctement.
+    Optimisation : Le compilateur optimise le code pour améliorer les performances.
+    Génération de code : Le code source est traduit en code machine ou en bytecode, selon le langage.
+    Édition des liens (linking) : Les différents modules compilés et les bibliothèques sont liés pour créer un exécutable final.
+
+Avantages
+
+    Performance : Le code compilé est généralement plus rapide car il est directement exécuté par le processeur.
+    Sécurité : Les erreurs peuvent être détectées à la compilation, avant l'exécution.
+    Optimisation : Le compilateur peut optimiser le code pour améliorer les performances.
+
+Inconvénients
+
+    Temps de compilation : La compilation peut prendre du temps, surtout pour de grands projets.
+    Portabilité : Un programme compilé pour une plateforme spécifique ne peut pas être exécuté sur une autre sans recompilation.
+
+Exemples de Langages Compilés
+
+    C : Utilisé pour le développement de systèmes d'exploitation et d'autres logiciels performants.
+    C++ : Extension de C avec des fonctionnalités orientées objet.
+    Rust : Connu pour sa sécurité mémoire et ses performances.
+
+Interprétation
+Principe
+
+L'interprétation est le processus où un interpréteur exécute le code source ligne par ligne, sans le traduire en code machine à l'avance. Chaque instruction est traduite et exécutée à la volée.
+Avantages
+
+    Flexibilité : Les modifications peuvent être testées immédiatement sans recompilation.
+    Portabilité : Le même code source peut être exécuté sur différentes plateformes sans modification, tant que l'interpréteur est disponible.
+
+Inconvénients
+
+    Performance : L'interprétation est généralement plus lente que la compilation, car chaque instruction doit être traduite en temps réel.
+    Dépistage des erreurs : Certaines erreurs ne sont détectées qu'à l'exécution, ce qui peut rendre le débogage plus difficile.
+
+Exemples de Langages Interprétés
+
+    Python : Connu pour sa simplicité et sa lisibilité, souvent utilisé pour le développement web et scientifique.
+    JavaScript : Utilisé principalement pour le développement web, interprété par les navigateurs.
+    Ruby : Connu pour sa syntaxe élégante et son utilisation dans le développement web.
+
+Pseudo-Compilation
+
+Certains langages utilisent une approche hybride appelée pseudo-compilation ou compilation just-in-time (JIT). Dans ce cas, le code source est d'abord traduit en un code intermédiaire (bytecode), qui est ensuite interprété ou compilé à la volée par une machine virtuelle.
+Avantages
+
+    Portabilité : Le même code source peut être exécuté sur différentes plateformes sans modification, tant que l'interpréteur est disponible.
+    Optimisation : Le compilateur peut optimiser le code pour améliorer les performances.
+    Sécurité : Les erreurs peuvent être détectées à la compilation, avant l'exécution.
+
+Inconvénients
+
+    Performance : La pseudo-compilation est généralement plus lente que la compilation, car chaque instruction doit passer par la machine virtuelle.
+
+Exemples de Langages avec Pseudo-Compilation
+
+    Java : Le code source est compilé en bytecode, exécuté par la Java Virtual Machine (JVM).
+    C# : Le code est compilé en bytecode (Intermediate Language) et exécuté par le Common Language Runtime (CLR) de .NET.
+    Python (avec PyPy) : Utilise une JIT compilation pour améliorer les performances par rapport à l'interprétation pure.

@@ -1,0 +1,40 @@
+
+languages étudié : C C++ Java C# python  (Rust)
+ 
+    Dans tous les languages notions:
+        Hello World : setup + présentation du fontionnement
+        variable
+        condition
+        boucle 
+        fonction
+        Référence/pointeurs
+        allocation de la mémoire
+        class/struct
+        fichier
+        graphisme
+        thread
+        socket
+
+
+
+
+Projet à faire dans chaque language et a comparé:
+        
+        Puissance 4/ Morpion -> thread,socket -> comparé la vitesse de calcul/lisibilité du code
+        Carré qui bouge et tourne -> graphisme
+        Programme de cryptage/compression de fichier
+
+
+Setup initiale (Windows 10/11):
+    VSCode
+    VS 2022
+    ssh
+    git
+
+
+
+
+Celui qui peut, agit. Celui qui ne peut pas, enseigne.
+Il y a deux sortes de savants: les spécialistes, qui connaissent tout sur rien,
+et les philosophes, qui ne connaissent rien sur tout.
+George Bernard Shaw
