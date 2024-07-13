@@ -43,7 +43,8 @@ Intérêts de NumPy :
 """     
 Qu'est-ce qu'un tableau NumPy ?
 
-Un tableau NumPy, également appelé ndarray (N-dimensional array), est une structure de données centrale dans la bibliothèque NumPy. 
+Un tableau NumPy, également appelé ndarray (N-dimensional array), est une structure de données centrale dans la bibliothèque NumPy.
+Très similaire au liste python, les tableaux numpy sont cependant de taille fixe et continennent des valeurs numériques uniquement. 
 Contrairement aux listes Python natives, les tableaux NumPy sont optimisés pour effectuer des opérations mathématiques et statistiques sur des grandes quantités de données de manière efficace.
 
 Attributs des tableaux NumPy
