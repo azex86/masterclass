@@ -18,5 +18,63 @@
 #  ''    /condition.py 
 #  ''    /boucle.py
 
-#consigne : écrire ....
+#consigne :
+#un nombre entier est choisi aléatoirement par le jeu
+#le joueur se voit demander des tentatives pour trouver ce nombre
+#à chaque tentative, le jeu indique si le nombre est supérieur ou inférieur à la tentative
+#et si je joueur se rapproche ou s'éloigne du nombre cherché
+#quand le joueur trouve le nombre, un message de réussite est affiché
+#ainsi que le nombre de tentative utilisé par le joueur
 
+
+#nombre aléatoire entre 0 et MAX
+MAX = 1000
+from random import randint
+n = randint(0,MAX)
+
+
+#CORRECTION
+
+#le nombre choisi par le joueur, on lui donne une valeur impossible au début
+x = MAX+1
+
+#le nombre de tentatives
+turn = 1
+
+
+
+
+#on récupère une valeur depuis le terminal en s'assurant que c'est un entier
+trying = ""
+while not (trying.isdigit() and 0>int(trying)<MAX):
+    trying = input(f"Entrer un nombre entre 0 et {MAX} >>")
+x = int(trying)
+
+last_delta = abs(x-n) #nécessaire pour comparer le delta d'une tentative avec le delta de la tentative précédente
+
+while x!=n: #tant que le joueur n'a pas réussi
+
+    #on compare n et x
+    if x > n:
+        print(f"Le nombre magique est inférieur à {x} !")
+    else:
+        print(f"Le nombre magique est supérieur à {x} !")
+    
+    #on calcule la différence
+    current_delta = abs(x-n)
+
+    if current_delta > last_delta :
+        print("Vous vous éloignez de votre objectif !")
+    elif current_delta < last_delta :
+        print("Vous vous rapprochez de votre obectif !")
+
+    last_delta = current_delta #la tentaive acuelle étant maintenant passé on actualise les deltas
+
+    trying = ""
+    while not (trying.isdigit() and 0>int(trying)<MAX):
+        trying = input(f"Entrer un nombre entre 0 et {MAX} >>")
+    x = int(trying)
+
+    turn= turn + 1
+
+print(f"Bravo vous avez réussi à trouver le nombre {n} au bout de {turn} tentatives !")
