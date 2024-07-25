@@ -49,3 +49,11 @@ print(f"{letter} -> {value} -> {same_letter}")
 #écrire une fonction qui prend deux listes en argument et qui retourne une liste avec les maximums de chaque liste pour chaque rang
 #si les listes ne font pas la même taille, la valeur prévaut 
 #exemple: f([1,5,6],[2,2]) -> [2,5,6]
+
+
+
+
+#consigne - 6 
+#une fonction qui initialise une liste de n nombre aléatoire entre MIN et MAX
+#une foncion qui renvoit une liste trier à partir d'une liste de nombre
+#trier la liste des nombres aléatoires
