@@ -32,8 +32,8 @@ def frange(start,stop,step):
 import matplotlib.pyplot as plt 
 
 
-
-
+X = [x for x in range(100)]
+Y = [x*1 for x in X]
 
 
 
