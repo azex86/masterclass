@@ -55,5 +55,5 @@ print(f"{letter} -> {value} -> {same_letter}")
 
 #consigne - 6 
 #une fonction qui initialise une liste de n nombre aléatoire entre MIN et MAX
-#une foncion qui renvoit une liste trier à partir d'une liste de nombre
+#une foncion qui renvoie une liste trier à partir d'une liste de nombre
 #trier la liste des nombres aléatoires
