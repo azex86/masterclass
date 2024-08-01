@@ -1,5 +1,8 @@
-# on souahite simuler le mouvement de deux astres dans un univers vierge
+# Voici le code pour simuler le mouvement de deux astres dans un univers vierge
 # et afficher leur position dans un graphe
+# le but de l'exercice et d'ajouter un troisième astre 
+# Les deux astres simulés ici sont la Terre et le Soleil
+# on va donc essayer d'ajouter une planète de notre système
 
 
 # Pour cela on utilisera une class Vector afin de simplifier les calculs dans l'espace
