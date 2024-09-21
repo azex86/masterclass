@@ -9,7 +9,8 @@
 #générer une liste de n nombres aléatoire compris dans [min;max]
 #tracer le nuage de point
 #calculer la moyenne, la valeur maximale et minimale
-#tracer la courbe reliant ces trois points sur le même graphique
+#tracer la droite horizontale représentant la moyenne
+#et le segment reliant la valeur max à la valeur min
 
 #aide
 
@@ -44,7 +45,11 @@ plt.show()
 # rappel : e(x) est déinie comme
 #       e(0) = 1
 #       e'(x) = e(x) <=> (e(x+h)-e(x))/h = e(x) avec h qui tend vers 0 ou une très petite valeur (pour nous 0.1 suffit)
-# 
+#       
+# pour les non matheux 
+# il faut retenir que la croissance de e est égale à e.
+#  ainsi si était une suite on aurait e(n+1) = e(n) + n * e(n) 
+#  soit e(n+1) = (n+1) * e(n)
 #Bonne chance !
 
 
@@ -60,7 +65,7 @@ plt.show()
 # on sait que y1 = ln(y) = ln(e(x)) = x <=> y1 = x
 # et comme y1 = ln(x1) = ln(y) <=> x1 = y
 
-#en somme, ln revient à prendre le fonction  e(x) à laquelle vous intervertissez x et y
+#en somme, ln revient à prendre la fonction  e(x) à laquelle vous intervertissez x et y
 
 
 
