@@ -1,7 +1,7 @@
 
-#include <iostream> // fonctions pour la sortie et l'entrée standard + la sortie d'erreur : iostream pour Input/Output stream
+#include <iostream> // fonctions pour la sortie et l'entrï¿½e standard + la sortie d'erreur : iostream pour Input/Output stream
 
-#include <fstream> //fonction pour lire et écrire dans un fichier
+#include <fstream> //fonction pour lire et ï¿½crire dans un fichier
 
 using namespace std;
 
@@ -10,43 +10,43 @@ using namespace std;
 int main()
 {
 	
-	cout << "salut\n"; //cout : C - out      cout est un objet qui représente la sortie standard
-						//on peut l'utiliser via l'opérateur "<<" pour afficher tout type de variable classique du C++
+	cout << "salut\n"; //cout : C - out      cout est un objet qui reprï¿½sente la sortie standard
+						//on peut l'utiliser via l'opï¿½rateur "<<" pour afficher tout type de variable classique du C++
 						//on peu enchainer plusieurs utilisation de "<<"
-	cout << 1 << " == " << 2 << " = " << (1 == 2) << endl; //endl pour end line est le caractère de fin de ligne dans notre cas il peut varier selon le compilateur et le système
+	cout << 1 << " == " << 2 << " = " << (1 == 2) << endl; //endl pour end line est le caractï¿½re de fin de ligne dans notre cas il peut varier selon le compilateur et le systï¿½me
 
-	const int size = 1'000'000;//il est possible d'écrire de grand chiffre en mettant des ' entre plusieurs suites de chiffres
+	const int size = 1'000'000;//il est possible d'ï¿½crire de grand chiffre en mettant des ' entre plusieurs suites de chiffres
 
 	char data[size] = "Salut"; //on initialise un tableau de char d'une taille de size
 
 
-	cout.write(data, size); //lors d'écriture de données brut dans le terminal (et oui ça peut servir) la fonction cout.write permert d'écrire dans le terminal les size octet présent en ram à l'adresse data
-	//on constate ici que data est initialisée avec des 0 qui n'apparaissent pas dans le terminal
-	//vérifions cette théorie
+	cout.write(data, size); //lors d'ï¿½criture de donnï¿½es brut dans le terminal (et oui ï¿½a peut servir) la fonction cout.write permert d'ï¿½crire dans le terminal les size octet prï¿½sent en ram ï¿½ l'adresse data
+	//on constate ici que data est initialisï¿½e avec des 0 qui n'apparaissent pas dans le terminal
+	//vï¿½rifions cette thï¿½orie
 	cout << endl; 
 	for (int i = 0; i < 50; i++)
 	{
-		char e = data[i];	//on accède à l'élément numero i de data
+		char e = data[i];	//on accï¿½de ï¿½ l'ï¿½lï¿½ment numero i de data
 		int value = (int)e;		//on convertie le char en int : on nomme cela un cast pour caster on fait   (type)value
 		cout << "data[" << i << "] = " << value << endl;
 	}
 	
 	//toute cette logique ce retrouve avec la sortie d'erreur
-	cerr << "ceci est un erreur !\n";// Quelle différence entre cout et cerr ? les deux apparaissent dans le terminal
+	cerr << "ceci est un erreur !\n";// Quelle diffï¿½rence entre cout et cerr ? les deux apparaissent dans le terminal
 									//il est possible de rediriger une des sorties vers un fichier par exemple mais on peut vouloir les erreur
-									//ex : j'ai un programme qui fait cout une liste géométrique plus de 1G de valeurs, 
-									// si je veux m'assurer que tout se déroule bien mais les 1G de valeurs me rendent avengle je redirige vers un fichier la sortie standard 
+									//ex : j'ai un programme qui fait cout une liste gï¿½omï¿½trique plus de 1G de valeurs, 
+									// si je veux m'assurer que tout se dï¿½roule bien mais les 1G de valeurs me rendent avengle je redirige vers un fichier la sortie standard 
 									// et je ne garde que les messages d'erreur plus importants 
 									// ou inversement je ne veux pas laisser l'utilisateur lambda voir mes messages d'erreur je redirige les erreurs vers un fichier log 
 
 
 
-	//l'entrée standard : C -in
+	//l'entrï¿½e standard : C -in
 	int x = 0;
 	cout << "x = ";
-	cin >> x;//l'objet cin s'utilise avec l'opérateur ">>" qui affecte une valeur à la variable passer en argument ici x ; 
-			//l'opérateur ">>" s'occupe tout seul de la conversion quand celle-ci est possible ici il va convertir en entier
-			//l'opérateur ">>" lit l'entrée standard jusqu'au prochain retour à la ligne
+	cin >> x;//l'objet cin s'utilise avec l'opï¿½rateur ">>" qui affecte une valeur ï¿½ la variable passer en argument ici x ; 
+			//l'opï¿½rateur ">>" s'occupe tout seul de la conversion quand celle-ci est possible ici il va convertir en entier
+			//l'opï¿½rateur ">>" lit l'entrï¿½e standard jusqu'au prochain retour ï¿½ la ligne
 	cout << endl << "x = " << x << endl;
 	cout << "taper votre pseudo >>";
 	cin.read(data, 10);//comme pour cout.write on a cin.read
@@ -54,12 +54,12 @@ int main()
 
 
 
-	//Les fichiers fonctionnent relativement pareil à ceci près qu'il faut les ouvrir ou le créer
+	//Les fichiers fonctionnent relativement pareil ï¿½ ceci prï¿½s qu'il faut les ouvrir ou le crï¿½er
 
 
-	ofstream fileOut = ofstream("text.txt");//ofstream pour out stream on ouvre le fichier text.txt en mode écriture, si il existe déjà, on le supprime purement et simplement
+	ofstream fileOut = ofstream("text.txt");//ofstream pour out stream on ouvre le fichier text.txt en mode ï¿½criture, si il existe dï¿½jï¿½, on le supprime purement et simplement
 	fileOut << x <<endl << data <<endl;
-	//l'usage de <<endl ou de <<'\n' ou encore de <<"\n" est nécessaire si on veut le lire par la suite
+	//l'usage de <<endl ou de <<'\n' ou encore de <<"\n" est nï¿½cessaire si on veut le lire par la suite
 	
 	fileOut.close();//on ferme le fichier pour permettre sa lecture 
 
@@ -67,10 +67,10 @@ int main()
 	ifstream fileIn = ifstream("text.txt");//on ouvre le fichier en mode lecture, si il n'existe pas : ERREUR
 	int y;
 	char name[20];
-	fileIn >> y >>name;//l'opérateur ">>" lit le fichier jusqu'au prochain saut de ligne d'ou l'utilité de <<endl
+	fileIn >> y >>name;//l'opï¿½rateur ">>" lit le fichier jusqu'au prochain saut de ligne d'ou l'utilitï¿½ de <<endl
 	cout << "y = " << y << endl
 		<< name << endl;
-	fileIn.close();//ion ferme le fichier par réflexe et par économie de mémoire
+	fileIn.close();//on ferme le fichier par rï¿½flexe et par ï¿½conomie de mï¿½moire
 
 
 	cout << "Fin" << endl;
