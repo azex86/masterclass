@@ -206,7 +206,7 @@ if 1:#juste pour indenter les parties
 
 
 
-    #quiver pour des vecteurs 2D sur un plan 2D
+    #équivalent pour des vecteurs 2D sur un plan 2D
     #ou des vecteurs 3D dans un espace 3D
 
     #valeurs des vecteurs
