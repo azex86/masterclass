@@ -170,7 +170,9 @@ if 1:#juste pour indenter les parties
     #on spécifie projection="3d"
     plot = fig.add_subplot(1,1,1,projection="3d")
     #on passe les trois axes avec len(Z)=len(X)*len(Y)
-    plot.plot(X,Y,Z)
+    try:
+        plot.plot(X,Y,Z)
+    except ValueError as er:print(f"{er} : si il y a un problème de dimension des listes, cela est probablement du à la version de matplotlib")
     plot.set_title('Courbe 3D pour la différence absolue')
     plot.set_xlabel('X')
     plot.set_ylabel('Y')
@@ -382,6 +384,7 @@ if 3:
         Y = [f(x) for x in X]
         ax.clear()
         ax.plot(X,Y)
+        cursor.set_val(power)
         fig.canvas.draw()
 
     def on_click(event): #fonction called lorsque notre bouton va être presser
@@ -410,5 +413,9 @@ if 3:
     cursor_ax = fig.add_axes([0.10+0.30+0.10,0.05,0.30,0.10])#même chose
     cursor = matplotlib.widgets.Slider(cursor_ax,"power",0,20,valinit=1)
     cursor.on_changed(update_cursor)
+
+    text_box_ax = fig.add_axes([0.10+0.30+0.10+0.10,0.0,0.10,0.05])#on ajoute un espace qui contiendra notre textBox
+    text_box = matplotlib.widgets.TextBox(text_box_ax,"power",textalignment="center",initial=str(power))
+    text_box.on_submit(lambda string:update_cursor(float(string)))
 
     plt.show()#on affiche
