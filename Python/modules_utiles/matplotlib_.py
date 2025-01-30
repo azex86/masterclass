@@ -384,7 +384,6 @@ if 3:
         Y = [f(x) for x in X]
         ax.clear()
         ax.plot(X,Y)
-        cursor.set_val(power)
         fig.canvas.draw()
 
     def on_click(event): #fonction called lorsque notre bouton va être presser
@@ -392,11 +391,7 @@ if 3:
         print(f'Vous avez cliqué sur le bouton')
         print(f"incrémentation de la puissance: {power} -> {power+1}")
         power+=1
-        Y = [f(x) for x in X]
-        ax.clear()
-        ax.plot(X,Y)
         cursor.set_val(power)
-        fig.canvas.draw()
 
     fig, ax = plt.subplots() #on instancie notre figure et notre graphe
     fig.subplots_adjust(bottom=0.30) #on fait de la place pour loger nos widgets en dessous
