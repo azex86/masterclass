@@ -1,6 +1,6 @@
 #include <iostream>
-#include "../Class_Struct/struct_methode.hpp"
-
+//#include "../Class_Struct/struct_methode.hpp"
+//#include "../Class_Struct/template.hpp"
 using namespace std;
 
 
@@ -8,8 +8,6 @@ using namespace std;
 
 int main()
 {
-	testPoint();//voir fichier struct_de_base.cpp
-	testVector();//voir fichier struct_methode
 
 
 	return 0;
