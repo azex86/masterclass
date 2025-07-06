@@ -23,10 +23,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Class_Struct\class.hpp" />
-    <ClInclude Include="Class_Struct\heritage.hpp" />
     <ClInclude Include="Class_Struct\struct_de_base.hpp" />
     <ClInclude Include="Class_Struct\struct_methode.hpp" />
-    <ClInclude Include="Class_Struct\template.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

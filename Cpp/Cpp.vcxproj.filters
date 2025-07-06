@@ -29,11 +29,5 @@
     <ClInclude Include="Class_Struct\class.hpp">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="Class_Struct\template.hpp">
-      <Filter>Fichiers sources</Filter>
-    </ClInclude>
-    <ClInclude Include="Class_Struct\heritage.hpp">
-      <Filter>Fichiers sources</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
